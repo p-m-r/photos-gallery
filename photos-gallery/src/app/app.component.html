@@ -5,6 +5,13 @@
 	[callbackGetPhotos]="callbackGetPhotos"
 	>
 		<li *ngFor="let photo of photos">
-			<img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg" alt="">
+			<figure>
+				<img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg" alt="">
+				<figcaption>
+					"{{photo.title}}" posted by {{photo.ownername}} on {{photo.datetaken}}
+					<br>
+					{{photo.description._content}}
+				</figcaption>
+			</figure>
 		</li>
 </ul>
