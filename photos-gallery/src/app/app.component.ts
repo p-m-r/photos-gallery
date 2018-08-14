@@ -30,7 +30,6 @@ export class AppComponent {
   	photos = JSON.parse(photos);
   	
   	this.photos = this.photos.concat(photos.photos.photo);
-  	console.log(this.photos);
 
   }
 

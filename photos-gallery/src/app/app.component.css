@@ -1,7 +1,23 @@
 #photo-container {
-  height: 500px;
-  width: 700px;
+  max-height: 700px;
   overflow: scroll;
   padding: 0;
   list-style: none;
+  margin: auto;
+}
+
+#photo-container figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#photo-container figcaption {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#photo-container figcaption p {
+	margin: 0;
 }
