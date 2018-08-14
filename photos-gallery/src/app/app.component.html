@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<ul id="photo-container"
+	appPhotosGallery
+	percentThreshold="80"
+	initialPhotos="true"
+	[callbackGetPhotos]="callbackGetPhotos"
+	>
+		<li *ngFor="let photo of photos">
+			<img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg" alt="">
+		</li>
+</ul>

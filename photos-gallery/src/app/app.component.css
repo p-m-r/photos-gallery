@@ -1,0 +1,7 @@
+#photo-container {
+  height: 500px;
+  width: 700px;
+  overflow: scroll;
+  padding: 0;
+  list-style: none;
+}
